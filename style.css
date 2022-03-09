@@ -1,0 +1,120 @@
+/* Baian Umum */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+
+}
+h2, h3 {
+    color: #f55951;
+}
+p{
+    text-indent: 2cm;
+    font-family: sans-serif;
+    text-align: justify;
+}
+#letter-spancing{
+    letter-spacing: 4px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 #543c52;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+/* bagian header */
+header{
+    display: inline;
+}
+.jumbotron{
+    font-size: 20px;
+    padding: 60px;
+    background-color: #543c52;
+    background-image: repeating-linear-gradient(#361d32, #edd2cb);
+    text-align: center;
+    color: black;
+}
+
+/* bagian navbar */
+nav{
+    background-color: #f55951;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #361d32;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: coral;
+}
+nav li{
+    display:inline;
+    list-style-type: none;
+    margin-right: 200px;
+}
+/* penaturan image */
+.featured-image {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transfrom .2s;
+    border-radius: 5px;
+}
+.featured-image:hover {
+    transform: scale(1.1);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* penaturan main */
+main{
+    padding: 20px;
+    overflow: auto;
+
+}
+.content {
+    float:left;
+    width: 70%;
+    padding: 10px;
+}
+/* penaturan aside */
+aside {
+    float: right;
+    width: 30%;
+    padding: 10%;
+}
+/* penaturan aside */
+.profile {
+    text-align: center;
+}
+
+/* akir */
+footer{
+    padding: 15px;
+    color: salmon;
+    background-color: skyblue;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
